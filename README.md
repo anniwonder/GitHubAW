@@ -1,15 +1,16 @@
 ### 30th April 2020
-Include the date you created this project and README file.
 
-### GitHub Reop Bikeshare
-
-
-### Creating a repo on GitHub using Mac Terminal, git and Atom
+### GitHub Bikeshare documentation branch
+This branch is used to work on proper documentation within the bikeshare project
 
 
-### bikeshare.py
+### Adding comments within bikeshare.py
+These comments should be useful to the reader and walk him through
 
 
-### Charles Hieger: https://www.youtube.com/watch?v=N6wQ28h-MmE
-### Adding an existing project to GitHub using the command line GitHub: https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+### bikeshare.py added comments:
+Explore bikeshare data base using Python
+Project 2 for Udacity Data Science programming with Python course
+
+
 
