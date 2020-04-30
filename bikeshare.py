@@ -1,4 +1,5 @@
 # Exploring the bikeshare database using Python
+# This project is for the Udacity Data Science programming with Python course
 import time
 import pandas as pd
 import numpy as np
