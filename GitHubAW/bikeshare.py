@@ -1,3 +1,5 @@
+# Exploring the bikeshare database using Python
+
 import time
 import pandas as pd
 import numpy as np
@@ -31,19 +33,19 @@ def get_filters():
 
     cities = ["chicago", "new york city", "washington"]
     city = input_data("Enter your city: ", "Error, invalid city name",cities)
-   
+
  # TO DO: get user input for month (all, january, february, ... , june)
-    
+
 months = ["all","january","february","march","april","may","june"]
     month = input_data("Enter the month (all, january, february, ... , june): ","Error, invalid month",months)
-    
+
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    
+
 days = ["all","monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
     day = input_data("Enter your day of week (all, monday, tuesday, ... sunday): ", "Error, invalid day", days)
     print('-'*40)
     return city, month, day # Return the variables
-
+# TO DO define
 
 def load_data(city, month, day):
     """
@@ -91,7 +93,7 @@ def time_stats(df):
     try:
         # TO DO: display the most common month
         months = ["January","February","March","April","May","June"]
-        print("Most common month " + months[int(df['starttime'].dt.month.mode()) - 1]) # Print the common month, using mode 
+        print("Most common month " + months[int(df['starttime'].dt.month.mode()) - 1]) # Print the common month, using mode
         # TO DO: display the most common day of week
         days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday',
                         'Saturday', 'Sunday']
@@ -148,7 +150,7 @@ def user_stats(df):
         print("Count user type = Suscriber " + str(df.query('usertype == "Subscriber"').usertype.count())) # Counts all the Subscriber
         print("Count user type = Customer " + str(df.query('usertype == "Customer"').usertype.count())) # Counts all the Customer
         # TO DO: Display counts of gender
-        
+
         print("Count user gender = Male " + str(df.query('gender == "Male"').gender.count())) # Count all Male
         print("Count user gender = Female " + str(df.query('gender == "Female"').gender.count())) # Count all Female
 
