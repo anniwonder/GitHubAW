@@ -1,0 +1,655 @@
+Last login: Wed Apr 29 14:56:51 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+annikaschwarz ~
+$ cd /Users/annikaschwarz/Desktop/GitHubAW 
+annikaschwarz GitHubAW
+$ git init
+Initialized empty Git repository in /Users/annikaschwarz/Desktop/GitHubAW/.git/
+annikaschwarz (master #) GitHubAW
+$ git clone /Users/annikaschwarz/Desktop/GithubProject/github_project3/bikeshare.py /Users/annikaschwarz/Desktop/GithubProject/github_project3/README.md 
+fatal: destination path '/Users/annikaschwarz/Desktop/GithubProject/github_project3/README.md' already exists and is not an empty directory.
+annikaschwarz (master #) GitHubAW
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+	csv_files/
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (master #) GitHubAW
+$ ls
+GitHubAW	csv_files
+annikaschwarz (master #) GitHubAW
+$ git add bikeshare.py
+annikaschwarz (master +) GitHubAW
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   bikeshare.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+	csv_files/
+
+annikaschwarz (master +) GitHubAW
+$ git commit
+[master (root-commit) 734865d] Adding bikeshare.py data file
+ 1 file changed, 181 insertions(+)
+ create mode 100644 bikeshare.py
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+	csv_files/
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (master) GitHubAW
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+annikaschwarz (master) GitHubAW
+$ git push https://github.com/anniwonder/GitHubAW.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/anniwonder/GitHubAW.git master
+
+annikaschwarz (master) GitHubAW
+$ git push --set-upstream https://github.com/anniwonder/GitHubAW.git master
+To https://github.com/anniwonder/GitHubAW.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/anniwonder/GitHubAW.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+annikaschwarz (master) GitHubAW
+$ git pull git push --set-upstream https://github.com/anniwonder/GitHubAW.git master
+fatal: invalid refspec 'https://github.com/anniwonder/GitHubAW.git'
+annikaschwarz (master) GitHubAW
+$ git pull https://github.com/anniwonder/GitHubAW.git master
+warning: no common commits
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/anniwonder/GitHubAW
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+annikaschwarz (master) GitHubAW
+$ touch .gitignore
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.gitignore
+	GitHubAW/
+	csv_files/
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (master) GitHubAW
+$ open .gitignore
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	.gitignore
+	GitHubAW/
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (master) GitHubAW
+$ git add .gitignore
+annikaschwarz (master +) GitHubAW
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+
+annikaschwarz (master +) GitHubAW
+$ git commit
+[master 0441154] Adding csv files to .gitignore folder
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+annikaschwarz (master) GitHubAW
+$ ls
+GitHubAW	bikeshare.py	csv_files
+annikaschwarz (master) GitHubAW
+$ git add bikeshare.py
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (master) GitHubAW
+$ git commit
+On branch master
+Untracked files:
+	.DS_Store
+	GitHubAW/
+
+nothing added to commit but untracked files present
+annikaschwarz (master) GitHubAW
+$ git log
+commit 0441154b147d833612e66677fdb879629c899b71 (HEAD -> master)
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 10:37:36 2020 +1000
+
+    Adding csv files to .gitignore folder
+
+commit 734865db5a55d34d227776b340a8421a3d440117
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 10:22:57 2020 +1000
+
+    Adding bikeshare.py data file
+annikaschwarz (master) GitHubAW
+$ git tag -a v1.0
+annikaschwarz (master) GitHubAW
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> documentation
+
+annikaschwarz (documentation) GitHubAW
+$ git remote add origin https://github.com/anniwonder/GitHubAW.git
+annikaschwarz (master) GitHubAW
+$ git remote -v
+origin	https://github.com/anniwonder/GitHubAW.git (fetch)
+origin	https://github.com/anniwonder/GitHubAW.git (push)
+annikaschwarz (master) GitHubAW
+$ git push -u origin master
+To https://github.com/anniwonder/GitHubAW.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/anniwonder/GitHubAW.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+annikaschwarz (master) GitHubAW
+$ git pull
+warning: no common commits
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/anniwonder/GitHubAW
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+annikaschwarz (master) GitHubAW
+$ git pull bikeshare.py
+fatal: invalid gitfile format: bikeshare.py
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+annikaschwarz (master) GitHubAW
+$ git branch documentation
+fatal: A branch named 'documentation' already exists.
+annikaschwarz (documentation) GitHubAW
+$ git checkout documentation
+Already on 'documentation'
+annikaschwarz (documentation) GitHubAW
+$ git log --oneline --decorate
+0441154 (HEAD -> documentation, tag: v1.0) Adding csv files to .gitignore folder
+734865d Adding bikeshare.py data file
+annikaschwarz (documentation) GitHubAW
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+annikaschwarz (documentation) GitHubAW
+$ git add documentation
+fatal: pathspec 'documentation' did not match any files
+annikaschwarz (documentation) GitHubAW
+$ ls
+GitHubAW	bikeshare.py	csv_files
+annikaschwarz (documentation) GitHubAW
+$ ls
+GitHubAW	README.md	bikeshare.py	csv_files
+annikaschwarz (documentation) GitHubAW
+$ open README.md
+annikaschwarz (documentation) GitHubAW
+$ git status
+On branch documentation
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GitHubAW/
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+annikaschwarz (documentation) GitHubAW
+$ git add README.md
+annikaschwarz (documentation +) GitHubAW
+$ git commit
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+nothing to commit, working tree clean
+annikaschwarz (documentation) GitHubAW
+$ git status
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+nothing to commit, working tree clean
+annikaschwarz (documentation) GitHubAW
+$ git checkout master
+Switched to branch 'master'
+annikaschwarz (master) GitHubAW
+$ git branch bikeshare_code
+annikaschwarz (master *) GitHubAW
+$ git add bikeshare_code
+fatal: pathspec 'bikeshare_code' did not match any files
+annikaschwarz (master *) GitHubAW
+$ git checkout bikeshare_code
+M	.DS_Store
+Switched to branch 'bikeshare_code'
+annikaschwarz (bikeshare_code *) GitHubAW
+$ git add bikeshare.py
+annikaschwarz (bikeshare_code *) GitHubAW
+$ git commit bikeshare.py
+On branch bikeshare_code
+Changes not staged for commit:
+	modified:   .DS_Store
+
+no changes added to commit
+annikaschwarz (bikeshare_code *) GitHubAW
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+annikaschwarz (master) GitHubAW
+$ git branch -r
+  origin/bikeshare_code
+  origin/documentation
+  origin/master
+annikaschwarz (master) GitHubAW
+$ git push origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+annikaschwarz (master) GitHubAW
+$ git push GitHubAW
+fatal: 'GitHubAW' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+annikaschwarz (master) GitHubAW
+$ git push anniwonder
+fatal: 'anniwonder' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+annikaschwarz (master) GitHubAW
+$ git branch -d bikeshare_code
+Deleted branch bikeshare_code (was 75ad79f).
+annikaschwarz (master) GitHubAW
+$ git log --oneline --decorate
+b384bfd (HEAD -> master, origin/master) Adding Intorduction coment for bikeshare data set code
+75ad79f (origin/bikeshare_code) Addes sources in README.md file
+0441154 (tag: v1.0) Adding csv files to .gitignore folder
+734865d Adding bikeshare.py data file
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (master *) GitHubAW
+$ git push
+Everything up-to-date
+annikaschwarz (master *) GitHubAW
+$ git pull
+Already up to date.
+annikaschwarz (master *) GitHubAW
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (master *) GitHubAW
+$ git commit -a bikeshare.py
+fatal: paths 'bikeshare.py ...' with -a does not make sense
+annikaschwarz (master *) GitHubAW
+$ git add bikeshare.py
+annikaschwarz (master +) GitHubAW
+$ git commit 
+[master 6ae7b02] Added description to bikeshare project
+ 1 file changed, 1 insertion(+)
+annikaschwarz (master) GitHubAW
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381 bytes | 381.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/anniwonder/GitHubAW.git
+   0030ca2..6ae7b02  master -> master
+annikaschwarz (master) GitHubAW
+$ git checkout documentation
+Switched to branch 'documentation'
+Your branch is up to date with 'origin/documentation'.
+annikaschwarz (documentation) GitHubAW
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+annikaschwarz (master) GitHubAW
+$ git checkout documentation
+Switched to branch 'documentation'
+Your branch is up to date with 'origin/documentation'.
+annikaschwarz (documentation) GitHubAW
+$ git status
+On branch documentation
+Your branch is up to date with 'origin/documentation'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (documentation *) GitHubAW
+$ git push
+Everything up-to-date
+annikaschwarz (documentation *) GitHubAW
+$ git log 
+commit 6af3ec91098daa1f5348789afda628022371cf82 (HEAD -> documentation, origin/documentation)
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 12:19:32 2020 +1000
+
+    New Introduction for bikeshare data set
+
+commit 8877791573ec7b12545e32f553e682a9347039be
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 12:16:33 2020 +1000
+
+    Deleted all duplicates
+
+commit 1a2519c80d8e3d6696c98281f8a8355bb6062540
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 11:30:05 2020 +1000
+
+    Changed README.md date
+
+commit 0441154b147d833612e66677fdb879629c899b71 (tag: v1.0)
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 10:37:36 2020 +1000
+
+annikaschwarz (documentation) GitHubAW
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+annikaschwarz (master) GitHubAW
+$ git branch refactoring
+annikaschwarz (master) GitHubAW
+$ git checkout refactoring
+Switched to branch 'refactoring'
+annikaschwarz (refactoring) GitHubAW
+$ git status
+On branch refactoring
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (refactoring *) GitHubAW
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+annikaschwarz (refactoring *) GitHubAW
+$ git status
+On branch refactoring
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (refactoring *) GitHubAW
+$ git push
+fatal: The current branch refactoring has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin refactoring
+
+annikaschwarz (refactoring *) GitHubAW
+$ git push --set-upstream origin refactoring
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'refactoring' on GitHub by visiting:
+remote:      https://github.com/anniwonder/GitHubAW/pull/new/refactoring
+remote: 
+To https://github.com/anniwonder/GitHubAW.git
+ * [new branch]      refactoring -> refactoring
+Branch 'refactoring' set up to track remote branch 'refactoring' from 'origin'.
+annikaschwarz (refactoring *) GitHubAW
+$ git commit
+On branch refactoring
+Your branch is up to date with 'origin/refactoring'.
+
+Changes not staged for commit:
+	modified:   bikeshare.py
+
+no changes added to commit
+annikaschwarz (refactoring *) GitHubAW
+$ git push
+Everything up-to-date
+annikaschwarz (refactoring *) GitHubAW
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+annikaschwarz (master) GitHubAW
+$ git log
+commit bc21fe908b344486ce287788a3b2353f01137b26 (HEAD -> master, origin/master)
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 12:13:34 2020 +1000
+
+    Deleted duplicate of bikeshare code
+
+commit 6ae7b02b7120316e581a74859c5f7fac145389cb
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 12:10:07 2020 +1000
+
+    Added description to bikeshare project
+
+commit 0030ca2b694873109c23d746bead49b5cccdb375
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 12:07:05 2020 +1000
+
+    Adding intro to Code
+
+commit b384bfdef3e2588a6ed8cfa1ebf3e81609c61263
+Author: Annika <annika.schwarz.co@gmail.com>
+Date:   Thu Apr 30 11:55:48 2020 +1000
+
+    Adding Intorduction coment for bikeshare data set code
+annikaschwarz (master) GitHubAW
+$ git log --oneline --decorate
+bc21fe9 (HEAD -> master, origin/master) Deleted duplicate of bikeshare code
+6ae7b02 Added description to bikeshare project
+0030ca2 Adding intro to Code
+b384bfd Adding Intorduction coment for bikeshare data set code
+75ad79f (origin/bikeshare_code) Addes sources in README.md file
+0441154 (tag: v1.0) Adding csv files to .gitignore folder
+734865d Adding bikeshare.py data file
+annikaschwarz (master) GitHubAW
+$ git pull
+Already up to date.
+annikaschwarz (master) GitHubAW
+$ git log --oneline --decorate --graph --all
+* bb6e67a (origin/refactoring, refactoring) Added function to display raw data to user
+* bc21fe9 (HEAD -> master, origin/master) Deleted duplicate of bikeshare code
+* 6ae7b02 Added description to bikeshare project
+* 0030ca2 Adding intro to Code
+* b384bfd Adding Intorduction coment for bikeshare data set code
+* 75ad79f (origin/bikeshare_code) Addes sources in README.md file
+| * 6af3ec9 (origin/documentation, documentation) New Introduction for bikeshare data set
+| * 8877791 Deleted all duplicates
+| * 1a2519c Changed README.md date
+|/  
+* 0441154 (tag: v1.0) Adding csv files to .gitignore folder
+* 734865d Adding bikeshare.py data file
+annikaschwarz (master) GitHubAW
+$ git merge documentation
+warning: Cannot merge binary files: .DS_Store (HEAD vs. documentation)
+Auto-merging bikeshare.py
+CONFLICT (content): Merge conflict in bikeshare.py
+CONFLICT (add/add): Merge conflict in .DS_Store
+Auto-merging .DS_Store
+Automatic merge failed; fix conflicts and then commit the result.
+annikaschwarz (master *+|MERGING) GitHubAW
+$ git merge refactoring
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+annikaschwarz (master *+|MERGING) GitHubAW
+$ git merge documentation
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+annikaschwarz (master *+|MERGING) GitHubAW
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	new file:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+annikaschwarz (master *+|MERGING) GitHubAW
+$ git restore bikeshare.py
+annikaschwarz (master +|MERGING) GitHubAW
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	new file:   README.md
+
+annikaschwarz (master +|MERGING) GitHubAW
+$ git commit
+[master 0c82254] Merge branch 'documentation' with master
+annikaschwarz (master *) GitHubAW
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   bikeshare.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+annikaschwarz (master *) GitHubAW
+$ git add bikeshare.py
+annikaschwarz (master +) GitHubAW
+$ git commit
+[master 30f0f8d] Updated bikeshare code
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+annikaschwarz (master) GitHubAW
+$ git merge refactoring
+Auto-merging bikeshare.py
+Merge made by the 'recursive' strategy.
+ bikeshare.py | 47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+annikaschwarz (master) GitHubAW
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+annikaschwarz (master) GitHubAW
+$ push
+-bash: push: command not found
+annikaschwarz (master) GitHubAW
+$ git push
+Everything up-to-date
+annikaschwarz (master) GitHubAW
+$ 

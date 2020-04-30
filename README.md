@@ -12,6 +12,7 @@ GitHub - Create account/sign up at https://github.com/
 
 
 
+<<<<<<< HEAD
 ### Creating a repo on GitHub using Mac Terminal, git and Atom in 5 steps
 (1) Setting Up Repository
 (2) Improving Documentation
@@ -30,6 +31,32 @@ Udacity resources
 (1) Charles Hieger: https://www.youtube.com/watch?v=N6wQ28h-MmE
 (2) Adding an existing project to GitHub using the command line GitHub: https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
 (3) Udacity Programming for Data Science resources and lectures
+||||||| e053d7e
+### bikeshare.py
+=======
+### Creating a repo on GitHub using Mac Terminal, git and Atom in 5 steps
+(1) Setting Up Repository
+(2) Improving Documentation
+(3) Additional Changes to Documentation
+(4) Refactor Python bikeshare code
+(5) Merge branches documentation and refactoring with master
+>>>>>>> dc09786ce006632d6072193c1e99e5a6412a4cc4
 
 
+<<<<<<< HEAD
+||||||| e053d7e
+### Charles Hieger: https://www.youtube.com/watch?v=N6wQ28h-MmE
+### Adding an existing project to GitHub using the command line GitHub: https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+=======
+
+### Data used
+bikeshare.py
+Udacity resources
+
+
+### Sources/Help/Credits/Acknowledgements
+(1) Charles Hieger: https://www.youtube.com/watch?v=N6wQ28h-MmE
+(2) Adding an existing project to GitHub using the command line GitHub: https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line
+(3) Udacity Programming for Data Science resources and lectures
+>>>>>>> dc09786ce006632d6072193c1e99e5a6412a4cc4
 
