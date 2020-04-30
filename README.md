@@ -41,9 +41,10 @@ User Type (Subscriber or Customer)
 
 2. The New York City and Chicago files additionally have the following two columns:
 
-Gender
-Birth Year
-Files
+1. Gender
+2. Birth Year
+
+## Files
 chicago.csv
 new_york_city.csv
 washington.csv
